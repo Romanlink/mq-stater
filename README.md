@@ -5,11 +5,11 @@
 #### 加入依赖
 
 ```xml
-<mirror>
+<dependency>
          <groupId>com.aiccj</groupId>
   		   <artifactId>mq-stater</artifactId>
          <version>0.0.1-SNAPSHOT</version>
-</mirror>
+</dependency>
 ```
 
 1. 具备运行环境：JDK1.8、Maven3.0+。
@@ -44,7 +44,7 @@ mq:
 
 ```
 @Data
-class DemoEvent extends RoxeEvent {
+class DemoEvent extends AiccjEvent {
     private String orderId;
     @Override
     public void validate() {}
